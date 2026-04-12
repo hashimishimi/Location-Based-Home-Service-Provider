@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Sign Up</title>
+</head>
+<body>
+
+  <h2>Employee Details Form</h2>
+
+  <form action="/add-employee" method="POST">
+
+    <label for="name">Employee Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Employee Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone_num">Employee Phone Number:</label><br>
+    <input type="text" id="phone_num" name="phone_num" required><br><br>
+
+    <label for="service">Service Provided:</label><br>
+    <select id="service" name="service" required>
+      <option value="">Select service</option>
+      <option value="Plumber">Plumber</option>
+      <option value="Electrician">Electrician</option>
+      <option value="Carpenter">Carpenter</option>
+      <option value="Painter">Painter</option>
+      <option value="Cleaner">Cleaner</option>
+      <option value="Driver">Driver</option>
+    </select><br><br>
+
+    <input type="hidden" id="latitude" name="latitude">
+    <input type="hidden" id="longitude" name="longitude">
+
+    <button type="button" onclick="getLocation()">Use My Current Location</button>
+    <button type="submit" onclick="return validateLocation()">Submit Employee</button>
+
+  </form>
+
+  <hr>
+
+  <p><strong>Latitude:</strong> <span id="lat">-</span></p>
+  <p><strong>Longitude:</strong> <span id="lng">-</span></p>
+
+  <script>
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          function(position) {
+            const lat = position.coords.latitude;
+            const lng = position.coords.longitude;
+
+            document.getElementById("lat").innerText = lat;
+            document.getElementById("lng").innerText = lng;
+
+            document.getElementById("latitude").value = lat;
+            document.getElementById("longitude").value = lng;
+
+            alert("Location captured successfully!");
+          },
+          function(error) {
+            alert("Unable to get location.");
+            console.error(error);
+          }
+        );
+      } else {
+        alert("Geolocation is not supported by this browser.");
+      }
+    }
+
+    function validateLocation() {
+      const lat = document.getElementById("latitude").value;
+      const lng = document.getElementById("longitude").value;
+
+      if (!lat || !lng) {
+        alert("Please click 'Use My Current Location' first.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+
+</body>
+</html>

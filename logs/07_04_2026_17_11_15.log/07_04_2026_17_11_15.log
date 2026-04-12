@@ -1,0 +1,13 @@
+[ 2026-04-07 17:11:15,413 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2026-04-07 17:11:15,413 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2026-04-07 17:11:15,430 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[ 2026-04-07 17:11:15,743 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-07 17:11:15,749 ] 97 werkzeug - INFO -  * Debugger PIN: 615-250-234
+[ 2026-04-07 17:11:49,655 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\Hashim\\anaconda3\\Lib\\site-packages\\flask\\app.py', reloading
+[ 2026-04-07 17:11:49,657 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\Hashim\\anaconda3\\Lib\\site-packages\\flask\\templating.py', reloading
+[ 2026-04-07 17:11:49,658 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\Hashim\\anaconda3\\Lib\\site-packages\\jinja2\\environment.py', reloading
+[ 2026-04-07 17:11:49,664 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\Hashim\\anaconda3\\Lib\\site-packages\\jinja2\\loaders.py', reloading
+[ 2026-04-07 17:11:49,671 ] 97 werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 17:11:49] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[ 2026-04-07 17:11:49,893 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[ 2026-04-07 17:12:55,399 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)

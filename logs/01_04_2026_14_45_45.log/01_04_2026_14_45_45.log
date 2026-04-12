@@ -1,0 +1,3 @@
+[ 2026-04-01 14:45:45,784 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-01 14:45:45,788 ] 97 werkzeug - INFO -  * Debugger PIN: 827-863-193
+[ 2026-04-01 14:46:16,416 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Apr/2026 14:46:16] "POST /add-client HTTP/1.1" 200 -

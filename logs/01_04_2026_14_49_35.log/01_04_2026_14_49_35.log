@@ -1,0 +1,7 @@
+[ 2026-04-01 14:49:35,531 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2026-04-01 14:49:35,531 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2026-04-01 14:49:35,539 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[ 2026-04-01 14:49:35,838 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-01 14:49:35,842 ] 97 werkzeug - INFO -  * Debugger PIN: 827-863-193
+[ 2026-04-01 14:49:41,591 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Apr/2026 14:49:41] "POST /add-client HTTP/1.1" 200 -

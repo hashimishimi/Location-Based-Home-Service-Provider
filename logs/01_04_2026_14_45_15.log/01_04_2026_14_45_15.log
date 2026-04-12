@@ -1,0 +1,6 @@
+[ 2026-04-01 14:45:15,356 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-01 14:45:15,360 ] 97 werkzeug - INFO -  * Debugger PIN: 827-863-193
+[ 2026-04-01 14:45:18,252 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Apr/2026 14:45:18] "GET / HTTP/1.1" 200 -
+[ 2026-04-01 14:45:18,278 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Apr/2026 14:45:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2026-04-01 14:45:44,932 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\src\\components\\Clientdeets.py', reloading
+[ 2026-04-01 14:45:44,932 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\src\\components\\Clientdeets.py', reloading

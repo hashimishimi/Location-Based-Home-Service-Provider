@@ -1,0 +1,3 @@
+[ 2026-04-07 17:28:10,012 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-07 17:28:10,016 ] 97 werkzeug - INFO -  * Debugger PIN: 615-250-234
+[ 2026-04-07 17:28:12,152 ] 97 werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 17:28:12] "[31m[1mGET /add-employee HTTP/1.1[0m" 405 -

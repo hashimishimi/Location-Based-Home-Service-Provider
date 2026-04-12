@@ -1,0 +1,9 @@
+[ 2026-04-01 14:53:52,210 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-01 14:53:52,213 ] 97 werkzeug - INFO -  * Debugger PIN: 827-863-193
+[ 2026-04-01 14:53:57,192 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Apr/2026 14:53:57] "GET / HTTP/1.1" 200 -
+[ 2026-04-01 14:54:16,643 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Apr/2026 14:54:16] "POST /add-client HTTP/1.1" 200 -
+[ 2026-04-01 14:54:40,300 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Apr/2026 14:54:40] "GET / HTTP/1.1" 200 -
+[ 2026-04-01 14:55:08,276 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Apr/2026 14:55:08] "POST /add-client HTTP/1.1" 200 -
+[ 2026-04-01 15:13:33,592 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\app.py', reloading
+[ 2026-04-01 15:13:33,592 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\app.py', reloading
+[ 2026-04-01 15:13:33,592 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\app.py', reloading

@@ -1,0 +1,8 @@
+[ 2026-04-13 01:31:29,275 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-13 01:31:29,279 ] 97 werkzeug - INFO -  * Debugger PIN: 836-607-454
+[ 2026-04-13 01:31:37,792 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Apr/2026 01:31:37] "GET / HTTP/1.1" 200 -
+[ 2026-04-13 01:31:39,370 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Apr/2026 01:31:39] "GET /employee-signup HTTP/1.1" 200 -
+[ 2026-04-13 01:32:03,634 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Apr/2026 01:32:03] "POST /add-employee HTTP/1.1" 200 -
+[ 2026-04-13 01:37:05,961 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Apr/2026 01:37:05] "GET / HTTP/1.1" 200 -
+[ 2026-04-13 01:37:16,832 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Apr/2026 01:37:16] "GET /client-signup HTTP/1.1" 200 -
+[ 2026-04-13 01:37:51,476 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Apr/2026 01:37:51] "POST /add-client HTTP/1.1" 200 -
