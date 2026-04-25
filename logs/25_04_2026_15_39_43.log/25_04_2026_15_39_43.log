@@ -1,0 +1,20 @@
+[ 2026-04-25 15:39:43,565 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2026-04-25 15:39:43,565 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2026-04-25 15:39:43,572 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[ 2026-04-25 15:39:43,860 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-25 15:39:43,864 ] 97 werkzeug - INFO -  * Debugger PIN: 909-833-962
+[ 2026-04-25 15:39:47,534 ] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 15:39:47] "GET / HTTP/1.1" 200 -
+[ 2026-04-25 15:39:51,015 ] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 15:39:51] "GET /signup-options HTTP/1.1" 200 -
+[ 2026-04-25 15:39:52,255 ] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 15:39:52] "GET /employee-signup HTTP/1.1" 200 -
+[ 2026-04-25 15:40:25,302 ] 10 root - ERROR - [1406 (22001): Data too long for column 'service' at row 1]
+[ 2026-04-25 15:40:25,306 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\Hashim\\anaconda3\\Lib\\site-packages\\mysql\\connector\\cursor_cext.py', reloading
+[ 2026-04-25 15:40:25,307 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\Hashim\\anaconda3\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\context_propagation.py', reloading
+[ 2026-04-25 15:40:25,310 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\Hashim\\anaconda3\\Lib\\site-packages\\mysql\\connector\\connection_cext.py', reloading
+[ 2026-04-25 15:40:25,321 ] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 15:40:25] "[35m[1mPOST /add-employee HTTP/1.1[0m" 500 -
+[ 2026-04-25 15:40:25,414 ] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 15:40:25] "[36mGET /add-employee?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2026-04-25 15:40:25,415 ] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 15:40:25] "[36mGET /add-employee?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2026-04-25 15:40:25,443 ] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 15:40:25] "GET /add-employee?__debugger__=yes&cmd=resource&f=console.png&s=gmgegqe3vtEjMkAV6VYZ HTTP/1.1" 200 -
+[ 2026-04-25 15:40:26,025 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[ 2026-04-25 15:47:13,109 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[ 2026-04-25 15:47:15,480 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)

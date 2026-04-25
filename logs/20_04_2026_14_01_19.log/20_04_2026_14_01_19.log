@@ -1,0 +1,11 @@
+[ 2026-04-20 14:01:19,162 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-20 14:01:19,169 ] 97 werkzeug - INFO -  * Debugger PIN: 797-545-294
+[ 2026-04-20 14:01:31,389 ] 97 werkzeug - INFO - 127.0.0.1 - - [20/Apr/2026 14:01:31] "GET / HTTP/1.1" 200 -
+[ 2026-04-20 14:01:33,923 ] 97 werkzeug - INFO - 127.0.0.1 - - [20/Apr/2026 14:01:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2026-04-20 14:01:58,785 ] 97 werkzeug - INFO - 127.0.0.1 - - [20/Apr/2026 14:01:58] "GET /employee-signup HTTP/1.1" 200 -
+[ 2026-04-20 14:03:04,039 ] 97 werkzeug - INFO - 127.0.0.1 - - [20/Apr/2026 14:03:04] "POST /add-employee HTTP/1.1" 200 -
+[ 2026-04-20 14:04:24,638 ] 97 werkzeug - INFO - 127.0.0.1 - - [20/Apr/2026 14:04:24] "GET / HTTP/1.1" 200 -
+[ 2026-04-20 14:04:27,368 ] 97 werkzeug - INFO - 127.0.0.1 - - [20/Apr/2026 14:04:27] "GET /employee-signup HTTP/1.1" 200 -
+[ 2026-04-20 14:04:59,129 ] 97 werkzeug - INFO - 127.0.0.1 - - [20/Apr/2026 14:04:59] "POST /add-employee HTTP/1.1" 200 -
+[ 2026-04-20 15:01:58,271 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\src\\exception.py', reloading
+[ 2026-04-20 15:01:58,363 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\src\\logger.py', reloading

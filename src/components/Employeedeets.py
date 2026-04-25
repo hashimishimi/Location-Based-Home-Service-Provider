@@ -27,7 +27,7 @@ class employeemodif:
                 emp_ID INT AUTO_INCREMENT PRIMARY KEY,
                 Name varchar(18),
                 email varchar(35),
-                phone_num varchar(10),
+                phone_num varchar(13),
                 service varchar(15),
                 lat DECIMAL(10,8),
                 lng DECIMAL(11,8)

@@ -1,0 +1,6 @@
+[ 2026-04-25 15:47:46,274 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-25 15:47:46,278 ] 97 werkzeug - INFO -  * Debugger PIN: 909-833-962
+[ 2026-04-25 15:47:48,314 ] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 15:47:48] "GET / HTTP/1.1" 200 -
+[ 2026-04-25 15:47:53,221 ] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 15:47:53] "GET /signup-options HTTP/1.1" 200 -
+[ 2026-04-25 15:47:54,068 ] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 15:47:54] "GET /employee-signup HTTP/1.1" 200 -
+[ 2026-04-25 15:48:14,213 ] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 15:48:14] "POST /add-employee HTTP/1.1" 200 -

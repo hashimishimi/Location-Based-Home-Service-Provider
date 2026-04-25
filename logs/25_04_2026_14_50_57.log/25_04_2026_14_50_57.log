@@ -1,0 +1,15 @@
+[ 2026-04-25 14:50:57,229 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2026-04-25 14:50:57,230 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2026-04-25 14:50:57,253 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[ 2026-04-25 14:50:57,698 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-25 14:50:57,707 ] 97 werkzeug - INFO -  * Debugger PIN: 909-833-962
+[ 2026-04-25 14:51:01,348 ] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 14:51:01] "GET / HTTP/1.1" 200 -
+[ 2026-04-25 14:51:02,090 ] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 14:51:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2026-04-25 14:51:03,832 ] 97 werkzeug - INFO - 127.0.0.1 - - [25/Apr/2026 14:51:03] "GET /client-signup HTTP/1.1" 200 -
+[ 2026-04-25 14:56:34,341 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\app.py', reloading
+[ 2026-04-25 14:56:34,341 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\app.py', reloading
+[ 2026-04-25 14:56:35,382 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[ 2026-04-25 14:56:57,835 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[ 2026-04-25 14:57:10,248 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[ 2026-04-25 15:27:37,058 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
