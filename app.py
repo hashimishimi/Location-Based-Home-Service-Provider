@@ -131,7 +131,7 @@ def verify_client_login():
     if userexists:
         return "Client login details verified successfully! (OTP comes next)"
     else:
-        return "Client not found. Invalid email or phone number."
+        return render_template("user_not_exists.html", signup_url="/client-signup", user_type="Client")
 
 # -------------------- EMPLOYEE LOGIN VERIFY --------------------
 @app.route('/verify-employee-login', methods=['POST'])
@@ -160,7 +160,7 @@ def verify_employee_login():
     if userexists:
         return "Employee login details verified successfully! (OTP comes next)"
     else:
-        return "Employee not found. Invalid email or phone number."
+        return render_template("user_not_exists.html", signup_url="/employee-signup", user_type="Employee")
 
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1', port=5000)

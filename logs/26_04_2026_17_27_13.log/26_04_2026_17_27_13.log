@@ -1,0 +1,12 @@
+[ 2026-04-26 17:27:13,897 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-26 17:27:13,901 ] 97 werkzeug - INFO -  * Debugger PIN: 903-155-778
+[ 2026-04-26 17:27:16,792 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 17:27:16] "GET / HTTP/1.1" 200 -
+[ 2026-04-26 17:27:19,040 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 17:27:19] "GET /signup-options HTTP/1.1" 200 -
+[ 2026-04-26 17:27:19,914 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 17:27:19] "GET /client-signup HTTP/1.1" 200 -
+[ 2026-04-26 17:27:44,686 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\Hashim\\anaconda3\\Lib\\site-packages\\mysql\\connector\\cursor_cext.py', reloading
+[ 2026-04-26 17:27:44,687 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\Hashim\\anaconda3\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\context_propagation.py', reloading
+[ 2026-04-26 17:27:44,695 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 17:27:44] "[35m[1mPOST /add-client HTTP/1.1[0m" 500 -
+[ 2026-04-26 17:27:44,787 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 17:27:44] "[36mGET /add-client?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2026-04-26 17:27:44,789 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 17:27:44] "[36mGET /add-client?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2026-04-26 17:27:44,818 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 17:27:44] "GET /add-client?__debugger__=yes&cmd=resource&f=console.png&s=sHTCnq1Ujwnvwb7wpqnQ HTTP/1.1" 200 -
+[ 2026-04-26 17:27:44,830 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 17:27:44] "[36mGET /add-client?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
