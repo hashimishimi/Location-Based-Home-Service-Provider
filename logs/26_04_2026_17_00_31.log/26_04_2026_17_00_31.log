@@ -1,0 +1,6 @@
+[ 2026-04-26 17:00:31,353 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-26 17:00:31,357 ] 97 werkzeug - INFO -  * Debugger PIN: 903-155-778
+[ 2026-04-26 17:00:31,665 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 17:00:31] "GET / HTTP/1.1" 200 -
+[ 2026-04-26 17:00:34,205 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 17:00:34] "GET /signup-options HTTP/1.1" 200 -
+[ 2026-04-26 17:00:35,128 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 17:00:35] "GET /client-signup HTTP/1.1" 200 -
+[ 2026-04-26 17:00:50,432 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 17:00:50] "POST /add-client HTTP/1.1" 200 -

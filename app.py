@@ -9,8 +9,8 @@ def get_db_connection():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="yourpassword",
-        database="yourdatabase"
+        password="pashu",
+        database="home_service"
     )
 
 # -------------------- HOME PAGE --------------------
@@ -51,14 +51,28 @@ def add_client():
     name = request.form.get("name")
     email = request.form.get("email")
     phone_num = request.form.get("phone_num").strip().replace(" ", "").replace("-", "")
-    full_phone = "+91" + phone_num
+    full_num = "+91" + phone_num
     lat = request.form.get("latitude")
     lng = request.form.get("longitude")
 
+    conn = get_db_connection()
+    cur = conn.cursor()
 
-    clientmodif.AddClient(name, email, full_phone, lat, lng)
+    query = "SELECT * FROM clients where email = %s AND phone_num = %s"
+    cur.execute(query, (email, full_num))
+    userexists = cur.fetchone()
 
-    return "Client registered successfully!"
+    cur.close()
+    conn.close()
+
+    if userexists:
+        return render_template("user_exists.html", login_url="/client-login", user_type="Client")
+
+    else:
+            
+        clientmodif.AddClient(name, email, full_num, lat, lng)
+
+        return "Client registered successfully!"
 
 # -------------------- EMPLOYEE SIGNUP SUBMIT --------------------
 @app.route('/add-employee', methods=['POST'])
@@ -66,15 +80,29 @@ def add_employee():
     name = request.form.get("name")
     email = request.form.get("email")
     phone_num = request.form.get("phone_num").strip().replace(" ", "").replace("-", "")
-    full_phone = "+91" + phone_num
+    full_num = "+91" + phone_num
     service = request.form.get("service")
     lat = request.form.get("latitude")
     lng = request.form.get("longitude")
 
+    conn = get_db_connection()
+    cur = conn.cursor()
 
-    employeemodif.AddEmp(name, email, full_phone, service, lat, lng)
+    query = "SELECT * FROM clients where email = %s AND phone_num = %s"
+    cur.execute(query, (email, full_num))
+    userexists = cur.fetchone()
 
-    return "Employee registered successfully!"
+    cur.close()
+    conn.close()
+
+    if userexists:
+        return render_template("user_exists.html", login_url="/employee-login", user_type="Employee")
+    
+    else:
+
+        employeemodif.AddEmp(name, email, full_num, service, lat, lng)
+
+        return "Employee registered successfully!"
 
 # -------------------- CLIENT LOGIN VERIFY --------------------
 @app.route('/verify-client-login', methods=['POST'])
@@ -91,16 +119,16 @@ def verify_client_login():
     full_phone = "+91" + phone_num
 
     conn = get_db_connection()
-    cursor = conn.cursor()
+    cur = conn.cursor()
 
     query = "SELECT * FROM clients WHERE email = %s AND phone_num = %s"
-    cursor.execute(query, (email, full_phone))
-    user = cursor.fetchone()
+    cur.execute(query, (email, full_phone))
+    userexists = cur.fetchone()
 
-    cursor.close()
+    cur.close()
     conn.close()
 
-    if user:
+    if userexists:
         return "Client login details verified successfully! (OTP comes next)"
     else:
         return "Client not found. Invalid email or phone number."
@@ -120,16 +148,16 @@ def verify_employee_login():
     full_phone = "+91" + phone_num
 
     conn = get_db_connection()
-    cursor = conn.cursor()
+    cur = conn.cursor()
 
     query = "SELECT * FROM employees WHERE email = %s AND phone_num = %s"
-    cursor.execute(query, (email, full_phone))
-    user = cursor.fetchone()
+    cur.execute(query, (email, full_phone))
+    userexists = cur.fetchone()
 
-    cursor.close()
+    cur.close()
     conn.close()
 
-    if user:
+    if userexists:
         return "Employee login details verified successfully! (OTP comes next)"
     else:
         return "Employee not found. Invalid email or phone number."

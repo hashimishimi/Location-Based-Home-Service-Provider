@@ -1,0 +1,15 @@
+[ 2026-04-26 16:58:06,104 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2026-04-26 16:58:06,104 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2026-04-26 16:58:06,113 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[ 2026-04-26 16:58:06,411 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-26 16:58:06,415 ] 97 werkzeug - INFO -  * Debugger PIN: 903-155-778
+[ 2026-04-26 16:58:08,343 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 16:58:08] "GET / HTTP/1.1" 200 -
+[ 2026-04-26 16:58:11,728 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 16:58:11] "GET /signup-options HTTP/1.1" 200 -
+[ 2026-04-26 16:58:12,555 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 16:58:12] "GET /client-signup HTTP/1.1" 200 -
+[ 2026-04-26 16:58:27,737 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 16:58:27] "[35m[1mPOST /add-client HTTP/1.1[0m" 500 -
+[ 2026-04-26 16:58:27,830 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 16:58:27] "[36mGET /add-client?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2026-04-26 16:58:27,833 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 16:58:27] "[36mGET /add-client?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2026-04-26 16:58:27,859 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 16:58:27] "GET /add-client?__debugger__=yes&cmd=resource&f=console.png&s=RrVyLIUu7eI7m3Ie5295 HTTP/1.1" 200 -
+[ 2026-04-26 16:59:39,509 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\app.py', reloading
+[ 2026-04-26 16:59:40,429 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)

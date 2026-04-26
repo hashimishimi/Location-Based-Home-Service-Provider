@@ -1,0 +1,18 @@
+[ 2026-04-26 16:56:55,318 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2026-04-26 16:56:55,318 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2026-04-26 16:56:55,333 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[ 2026-04-26 16:56:55,628 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-26 16:56:55,633 ] 97 werkzeug - INFO -  * Debugger PIN: 903-155-778
+[ 2026-04-26 16:56:59,452 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 16:56:59] "GET / HTTP/1.1" 200 -
+[ 2026-04-26 16:57:00,144 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 16:57:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2026-04-26 16:57:02,521 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 16:57:02] "GET /signup-options HTTP/1.1" 200 -
+[ 2026-04-26 16:57:04,048 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 16:57:04] "GET /client-signup HTTP/1.1" 200 -
+[ 2026-04-26 16:57:36,599 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\Hashim\\anaconda3\\Lib\\site-packages\\flask\\app.py', reloading
+[ 2026-04-26 16:57:36,601 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\Hashim\\anaconda3\\Lib\\site-packages\\mysql\\connector\\pooling.py', reloading
+[ 2026-04-26 16:57:36,602 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\Hashim\\anaconda3\\Lib\\site-packages\\mysql\\connector\\connection_cext.py', reloading
+[ 2026-04-26 16:57:36,606 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\Hashim\\anaconda3\\Lib\\site-packages\\mysql\\connector\\abstracts.py', reloading
+[ 2026-04-26 16:57:36,613 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 16:57:36] "[35m[1mPOST /add-client HTTP/1.1[0m" 500 -
+[ 2026-04-26 16:57:36,710 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 16:57:36] "GET /add-client?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[ 2026-04-26 16:57:36,711 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Apr/2026 16:57:36] "GET /add-client?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[ 2026-04-26 16:57:36,781 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
