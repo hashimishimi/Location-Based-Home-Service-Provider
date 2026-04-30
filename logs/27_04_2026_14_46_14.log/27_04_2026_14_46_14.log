@@ -1,0 +1,3 @@
+[ 2026-04-27 14:46:14,312 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-27 14:46:14,315 ] 97 werkzeug - INFO -  * Debugger PIN: 143-037-615
+[ 2026-04-27 14:47:53,285 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\app.py', reloading

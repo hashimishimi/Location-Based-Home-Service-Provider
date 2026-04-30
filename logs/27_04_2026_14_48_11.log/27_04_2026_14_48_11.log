@@ -1,0 +1,11 @@
+[ 2026-04-27 14:48:11,554 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2026-04-27 14:48:11,554 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2026-04-27 14:48:11,562 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[ 2026-04-27 14:48:11,863 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-27 14:48:11,866 ] 97 werkzeug - INFO -  * Debugger PIN: 143-037-615
+[ 2026-04-27 14:48:17,360 ] 97 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 14:48:17] "GET / HTTP/1.1" 200 -
+[ 2026-04-27 14:48:19,086 ] 97 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 14:48:19] "GET /login-options HTTP/1.1" 200 -
+[ 2026-04-27 14:48:19,794 ] 97 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 14:48:19] "GET /client-login HTTP/1.1" 200 -
+[ 2026-04-27 14:48:29,633 ] 97 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 14:48:29] "POST /send-client-otp HTTP/1.1" 200 -
+[ 2026-04-27 14:48:39,491 ] 97 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 14:48:39] "POST /verify-otp HTTP/1.1" 200 -

@@ -1,0 +1,11 @@
+[ 2026-04-30 14:17:55,501 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-30 14:17:55,507 ] 97 werkzeug - INFO -  * Debugger PIN: 867-140-438
+[ 2026-04-30 14:17:59,830 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 14:17:59] "GET / HTTP/1.1" 200 -
+[ 2026-04-30 14:18:00,226 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 14:18:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2026-04-30 14:18:02,777 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 14:18:02] "GET /signup-options HTTP/1.1" 200 -
+[ 2026-04-30 14:18:03,642 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 14:18:03] "GET /client-signup HTTP/1.1" 200 -
+[ 2026-04-30 14:18:07,242 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 14:18:07] "GET /login-options HTTP/1.1" 200 -
+[ 2026-04-30 14:18:08,166 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 14:18:08] "GET /client-login HTTP/1.1" 200 -
+[ 2026-04-30 14:18:21,069 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 14:18:21] "POST /send-client-otp HTTP/1.1" 200 -
+[ 2026-04-30 14:18:35,258 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 14:18:35] "POST /verify-otp HTTP/1.1" 200 -
+[ 2026-04-30 14:22:02,676 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\src\\components\\send_otp.py', reloading

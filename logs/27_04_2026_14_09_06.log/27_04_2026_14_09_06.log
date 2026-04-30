@@ -1,0 +1,13 @@
+[ 2026-04-27 14:09:06,104 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-27 14:09:06,113 ] 97 werkzeug - INFO -  * Debugger PIN: 143-037-615
+[ 2026-04-27 14:09:10,055 ] 97 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 14:09:10] "GET / HTTP/1.1" 200 -
+[ 2026-04-27 14:09:10,309 ] 97 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 14:09:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2026-04-27 14:09:13,069 ] 97 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 14:09:13] "GET /signup-options HTTP/1.1" 200 -
+[ 2026-04-27 14:09:19,452 ] 97 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 14:09:19] "GET /client-signup HTTP/1.1" 200 -
+[ 2026-04-27 14:09:51,246 ] 97 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 14:09:51] "POST /add-client HTTP/1.1" 200 -
+[ 2026-04-27 14:10:04,285 ] 97 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 14:10:04] "GET / HTTP/1.1" 200 -
+[ 2026-04-27 14:10:06,054 ] 97 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 14:10:06] "GET /login-options HTTP/1.1" 200 -
+[ 2026-04-27 14:10:07,380 ] 97 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 14:10:07] "GET /employee-login HTTP/1.1" 200 -
+[ 2026-04-27 14:10:10,312 ] 97 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 14:10:10] "GET /client-login HTTP/1.1" 200 -
+[ 2026-04-27 14:10:31,204 ] 97 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 14:10:31] "POST /verify-client-login HTTP/1.1" 200 -
+[ 2026-04-27 14:21:18,175 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\app.py', reloading
