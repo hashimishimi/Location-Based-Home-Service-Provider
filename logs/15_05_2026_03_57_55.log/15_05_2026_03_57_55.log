@@ -1,0 +1,46 @@
+[ 2026-05-15 03:57:55,343 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2026-05-15 03:57:55,343 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2026-05-15 03:57:55,359 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[ 2026-05-15 03:57:55,727 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-05-15 03:57:55,734 ] 97 werkzeug - INFO -  * Debugger PIN: 106-096-353
+[ 2026-05-15 03:58:02,005 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 03:58:02] "GET / HTTP/1.1" 200 -
+[ 2026-05-15 03:58:04,491 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 03:58:04] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 03:58:05,288 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 03:58:05] "GET /client-login HTTP/1.1" 200 -
+[ 2026-05-15 03:58:10,856 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 03:58:10] "POST /send-client-otp HTTP/1.1" 200 -
+[ 2026-05-15 03:58:17,721 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 03:58:17] "[32mPOST /verify-otp HTTP/1.1[0m" 302 -
+[ 2026-05-15 03:58:17,729 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 03:58:17] "GET /client-home HTTP/1.1" 200 -
+[ 2026-05-15 04:00:41,997 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:00:41] "GET /signup-options HTTP/1.1" 200 -
+[ 2026-05-15 04:00:43,719 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:00:43] "GET /employee-signup HTTP/1.1" 200 -
+[ 2026-05-15 04:04:05,753 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:04:05] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 04:04:06,963 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:04:06] "GET /client-login HTTP/1.1" 200 -
+[ 2026-05-15 04:04:11,898 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:04:11] "POST /send-client-otp HTTP/1.1" 200 -
+[ 2026-05-15 04:04:20,793 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:04:20] "[32mPOST /verify-otp HTTP/1.1[0m" 302 -
+[ 2026-05-15 04:04:20,801 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:04:20] "GET /client-home HTTP/1.1" 200 -
+[ 2026-05-15 04:04:28,833 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:04:28] "POST /request-service HTTP/1.1" 200 -
+[ 2026-05-15 04:04:36,035 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:04:36] "GET / HTTP/1.1" 200 -
+[ 2026-05-15 04:04:38,683 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:04:38] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 04:04:40,915 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:04:40] "GET /employee-login HTTP/1.1" 200 -
+[ 2026-05-15 04:04:47,581 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:04:47] "POST /send-employee-otp HTTP/1.1" 200 -
+[ 2026-05-15 04:05:30,538 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:05:30] "POST /send-employee-otp HTTP/1.1" 200 -
+[ 2026-05-15 04:09:04,330 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:09:04] "GET /signup-options HTTP/1.1" 200 -
+[ 2026-05-15 04:09:05,584 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:09:05] "GET /employee-signup HTTP/1.1" 200 -
+[ 2026-05-15 04:09:21,290 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:09:21] "POST /add-employee HTTP/1.1" 200 -
+[ 2026-05-15 04:10:02,708 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:10:02] "GET / HTTP/1.1" 200 -
+[ 2026-05-15 04:10:05,547 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:10:05] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 04:10:11,065 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:10:11] "GET /employee-login HTTP/1.1" 200 -
+[ 2026-05-15 04:10:18,071 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:10:18] "POST /send-employee-otp HTTP/1.1" 200 -
+[ 2026-05-15 04:10:27,419 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:10:27] "[32mPOST /verify-otp HTTP/1.1[0m" 302 -
+[ 2026-05-15 04:10:28,233 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:10:28] "GET /employee-home HTTP/1.1" 200 -
+[ 2026-05-15 04:11:18,557 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:11:18] "GET / HTTP/1.1" 200 -
+[ 2026-05-15 04:11:20,321 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:11:20] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 04:11:20,860 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:11:20] "GET /client-login HTTP/1.1" 200 -
+[ 2026-05-15 04:11:27,414 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:11:27] "POST /send-client-otp HTTP/1.1" 200 -
+[ 2026-05-15 04:11:33,574 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:11:33] "[32mPOST /verify-otp HTTP/1.1[0m" 302 -
+[ 2026-05-15 04:11:33,580 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:11:33] "GET /client-home HTTP/1.1" 200 -
+[ 2026-05-15 04:11:36,147 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:11:36] "POST /request-service HTTP/1.1" 200 -
+[ 2026-05-15 04:11:38,651 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:11:38] "GET /employee-home HTTP/1.1" 200 -
+[ 2026-05-15 04:11:44,107 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:11:44] "POST /accept-request/2 HTTP/1.1" 200 -
+[ 2026-05-15 04:11:58,551 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:11:58] "POST /accept-request/2 HTTP/1.1" 200 -
+[ 2026-05-15 04:17:51,722 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\src\\utils\\service_utils.py', reloading
+[ 2026-05-15 04:17:52,660 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)

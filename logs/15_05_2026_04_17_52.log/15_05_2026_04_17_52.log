@@ -1,0 +1,18 @@
+[ 2026-05-15 04:17:53,002 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-05-15 04:17:53,005 ] 97 werkzeug - INFO -  * Debugger PIN: 106-096-353
+[ 2026-05-15 04:18:14,919 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:18:14] "GET / HTTP/1.1" 200 -
+[ 2026-05-15 04:18:17,698 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:18:17] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 04:18:18,824 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:18:18] "GET /employee-login HTTP/1.1" 200 -
+[ 2026-05-15 04:18:24,112 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:18:24] "POST /send-employee-otp HTTP/1.1" 200 -
+[ 2026-05-15 04:18:32,392 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:18:32] "[32mPOST /verify-otp HTTP/1.1[0m" 302 -
+[ 2026-05-15 04:18:33,164 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:18:33] "GET /employee-home HTTP/1.1" 200 -
+[ 2026-05-15 04:18:36,569 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:18:36] "GET / HTTP/1.1" 200 -
+[ 2026-05-15 04:18:39,393 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:18:39] "GET /signup-options HTTP/1.1" 200 -
+[ 2026-05-15 04:18:40,919 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:18:40] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 04:18:41,315 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:18:41] "GET /client-login HTTP/1.1" 200 -
+[ 2026-05-15 04:18:51,955 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:18:51] "POST /send-client-otp HTTP/1.1" 200 -
+[ 2026-05-15 04:18:58,248 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:18:58] "[32mPOST /verify-otp HTTP/1.1[0m" 302 -
+[ 2026-05-15 04:18:58,255 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:18:58] "GET /client-home HTTP/1.1" 200 -
+[ 2026-05-15 04:19:03,794 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:19:03] "POST /request-service HTTP/1.1" 200 -
+[ 2026-05-15 04:19:05,683 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:19:05] "GET /employee-home HTTP/1.1" 200 -
+[ 2026-05-15 04:19:07,614 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:19:07] "POST /accept-request/3 HTTP/1.1" 200 -

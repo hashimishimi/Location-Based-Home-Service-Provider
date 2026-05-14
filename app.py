@@ -1,8 +1,22 @@
-from flask import Flask, render_template, request, session
+from flask import Flask, render_template, request, session, redirect
 from src.components.Clientdeets import clientmodif
 from src.components.Employeedeets import employeemodif
+
+from src.utils.otp_utils import (
+    generate_otp,
+    store_otp,
+    verify_user_otp,
+    clear_otp
+)
+
+from src.utils.service_utils import (
+    create_service_request,
+    get_employee_service,
+    get_pending_requests,
+    accept_service_request
+)
+
 import mysql.connector
-import random
 
 app = Flask(__name__)
 app.secret_key = "secret_key"
@@ -201,8 +215,13 @@ def verify_employee_login():
 # -------------------- CLIENT LOGIN -> SEND OTP --------------------
 @app.route('/send-client-otp', methods=['POST'])
 def send_client_otp():
+
     email = request.form.get("email")
-    phone_num = request.form.get("phone_num").strip().replace(" ", "").replace("-", "")
+
+    phone_num = request.form.get("phone_num") \
+        .strip() \
+        .replace(" ", "") \
+        .replace("-", "")
 
     if not phone_num.isdigit():
         return "Phone number must contain only digits."
@@ -215,26 +234,40 @@ def send_client_otp():
     conn = get_db_connection()
     cur = conn.cursor()
 
-    cur.execute("SELECT * FROM clients WHERE email = %s AND phone_num = %s", (email, full_phone))
+    cur.execute(
+        "SELECT * FROM clients WHERE email = %s AND phone_num = %s",
+        (email, full_phone)
+    )
+
     user = cur.fetchone()
+    session['client_ID'] = user[0]
 
     cur.close()
     conn.close()
 
     if user:
-        otp = random.randint(100000, 999999)
 
-        session['otp'] = str(otp)
-        session['user_type'] = 'client'
-        session['email'] = email
-        session['phone_num'] = full_phone
+        otp = generate_otp()
+
+        store_otp(
+            session,
+            otp,
+            'client',
+            email,
+            full_phone
+        )
 
         print(f"\nCLIENT OTP for {full_phone}: {otp}\n")
 
         return render_template("verify_otp.html")
-    else:
-        return render_template("user_not_found.html", signup_url="/client-signup", user_type="Client")
 
+    else:
+
+        return render_template(
+            "user_not_found.html",
+            signup_url="/client-signup",
+            user_type="Client"
+        )
 
 
 
@@ -242,8 +275,13 @@ def send_client_otp():
 # -------------------- EMPLOYEE LOGIN -> SEND OTP --------------------
 @app.route('/send-employee-otp', methods=['POST'])
 def send_employee_otp():
+
     email = request.form.get("email")
-    phone_num = request.form.get("phone_num").strip().replace(" ", "").replace("-", "")
+
+    phone_num = request.form.get("phone_num") \
+        .strip() \
+        .replace(" ", "") \
+        .replace("-", "")
 
     if not phone_num.isdigit():
         return "Phone number must contain only digits."
@@ -256,46 +294,136 @@ def send_employee_otp():
     conn = get_db_connection()
     cur = conn.cursor()
 
-    cur.execute("SELECT * FROM employees WHERE email = %s AND phone_num = %s", (email, full_phone))
+    cur.execute(
+        "SELECT * FROM employees WHERE email = %s AND phone_num = %s",
+        (email, full_phone)
+    )
+
     user = cur.fetchone()
+    session['emp_ID'] = user[0]
 
     cur.close()
     conn.close()
 
     if user:
-        otp = random.randint(100000, 999999)
 
-        session['otp'] = str(otp)
-        session['user_type'] = 'employee'
-        session['email'] = email
-        session['phone_num'] = full_phone
+        otp = generate_otp()
+
+        store_otp(
+            session,
+            otp,
+            'employee',
+            email,
+            full_phone
+        )
 
         print(f"\nEMPLOYEE OTP for {full_phone}: {otp}\n")
 
         return render_template("verify_otp.html")
+
     else:
-        return render_template("user_not_found.html", signup_url="/employee-signup", user_type="Employee")
+
+        return render_template(
+            "user_not_found.html",
+            signup_url="/employee-signup",
+            user_type="Employee"
+        )
 
 
 # -------------------- VERIFY OTP --------------------
 @app.route('/verify-otp', methods=['POST'])
 def verify_otp():
-    entered_otp = request.form.get("otp")
-    stored_otp = session.get("otp")
-    user_type = session.get("user_type")
 
-    if entered_otp == stored_otp:
+    entered_otp = request.form.get("otp")
+
+    if verify_user_otp(session, entered_otp):
+
         session['logged_in'] = True
-        session.pop('otp', None)   # remove OTP after successful use
+
+        clear_otp(session)
+
+        user_type = session.get("user_type")
 
         if user_type == 'client':
-            return "Client login successful!"
+            return redirect('/client-home')
+
         elif user_type == 'employee':
-            return "Employee login successful!"
+            return redirect('/employee-home')
+
         else:
             return "Login successful!"
+
     else:
+
         return "Invalid OTP. Please try again."
+    
+
+# -------------------- CLIENT HOME --------------------
+@app.route('/client-home')
+def client_home():
+
+    client_ID = session.get('client_ID')
+
+    if not client_ID:
+        return "Please login first."
+
+    return render_template("client_home.html")
+
+# -------------------- EMPLOYEE HOME --------------------
+@app.route('/employee-home')
+def employee_home():
+
+    emp_ID = session.get('emp_ID')
+
+    if not emp_ID:
+        return "Please login first."
+
+    employee_service = get_employee_service(emp_ID)
+
+    requests = get_pending_requests(
+        employee_service,
+        emp_ID,
+        radius_km=10
+    )
+
+    return render_template(
+        "employee_home.html",
+        requests=requests
+    )
+
+# -------------------- REQUEST SERVICE --------------------
+@app.route('/request-service', methods=['POST'])
+def request_service():
+
+    client_ID = session.get('client_ID')
+
+    if not client_ID:
+        return "Please login first."
+
+    service_name = request.form.get("service_name")
+
+    create_service_request(
+        client_ID,
+        service_name
+    )
+
+    return "Service request submitted successfully!"
+
+# -------------------- ACCEPT REQUEST --------------------
+@app.route('/accept-request/<int:request_id>', methods=['POST'])
+def accept_request(request_id):
+
+    emp_ID = session.get('emp_ID')
+
+    if not emp_ID:
+        return "Please login first."
+
+    accept_service_request(
+        request_id,
+        emp_ID
+    )
+
+    return "Request accepted successfully!"
     
 
 if __name__ == '__main__':

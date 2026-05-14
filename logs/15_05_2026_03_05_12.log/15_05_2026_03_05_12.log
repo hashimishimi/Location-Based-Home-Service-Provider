@@ -1,0 +1,16 @@
+[ 2026-05-15 03:05:12,637 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2026-05-15 03:05:12,637 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2026-05-15 03:05:12,655 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[ 2026-05-15 03:05:12,985 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-05-15 03:05:12,990 ] 97 werkzeug - INFO -  * Debugger PIN: 106-096-353
+[ 2026-05-15 03:06:07,708 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 03:06:07] "GET / HTTP/1.1" 200 -
+[ 2026-05-15 03:06:07,754 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 03:06:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2026-05-15 03:06:10,901 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 03:06:10] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 03:06:11,795 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 03:06:11] "GET /client-login HTTP/1.1" 200 -
+[ 2026-05-15 03:06:19,544 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 03:06:19] "POST /send-client-otp HTTP/1.1" 200 -
+[ 2026-05-15 03:06:41,757 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 03:06:41] "POST /verify-otp HTTP/1.1" 200 -
+[ 2026-05-15 03:11:48,720 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\src\\components\\otp_utils.py', reloading
+[ 2026-05-15 03:11:48,721 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\src\\utils\\otp_utils.py', reloading
+[ 2026-05-15 03:11:48,721 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\src\\utils\\otp_utils.py', reloading
+[ 2026-05-15 03:11:49,738 ] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)

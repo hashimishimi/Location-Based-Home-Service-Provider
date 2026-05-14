@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Home</title>
+</head>
+<body>
+
+    <h1>Employee Dashboard</h1>
+
+    <h3>Pending Requests</h3>
+
+    {% for request in requests %}
+
+        <div style="border:1px solid black; padding:10px; margin:10px;">
+
+            <p>Request ID: {{ request[0] }}</p>
+
+            <p>Service: {{ request[2] }}</p>
+
+            <p>Status: {{ request[5] }}</p>
+
+            <form action="/accept-request/{{ request[0] }}" method="POST">
+
+                <button type="submit">
+                    Accept Request
+                </button>
+
+            </form>
+
+        </div>
+
+    {% endfor %}
+
+</body>
+</html>

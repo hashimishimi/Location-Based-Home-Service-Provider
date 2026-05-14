@@ -1,0 +1,24 @@
+[ 2026-05-15 04:29:17,837 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-05-15 04:29:17,840 ] 97 werkzeug - INFO -  * Debugger PIN: 106-096-353
+[ 2026-05-15 04:29:20,476 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:29:20] "GET / HTTP/1.1" 200 -
+[ 2026-05-15 04:29:57,733 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:29:57] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 04:29:58,563 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:29:58] "GET /client-login HTTP/1.1" 200 -
+[ 2026-05-15 04:30:18,181 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:30:18] "POST /send-client-otp HTTP/1.1" 200 -
+[ 2026-05-15 04:30:25,979 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:30:25] "[32mPOST /verify-otp HTTP/1.1[0m" 302 -
+[ 2026-05-15 04:30:25,985 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:30:25] "GET /client-home HTTP/1.1" 200 -
+[ 2026-05-15 04:30:35,526 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:30:35] "POST /request-service HTTP/1.1" 200 -
+[ 2026-05-15 04:30:37,608 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:30:37] "GET / HTTP/1.1" 200 -
+[ 2026-05-15 04:30:39,541 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:30:39] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 04:30:40,131 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:30:40] "GET /employee-login HTTP/1.1" 200 -
+[ 2026-05-15 04:30:45,456 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:30:45] "POST /send-employee-otp HTTP/1.1" 200 -
+[ 2026-05-15 04:30:52,451 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:30:52] "[32mPOST /verify-otp HTTP/1.1[0m" 302 -
+[ 2026-05-15 04:30:53,246 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:30:53] "GET /employee-home HTTP/1.1" 200 -
+[ 2026-05-15 04:30:56,785 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:30:56] "GET / HTTP/1.1" 200 -
+[ 2026-05-15 04:30:59,685 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:30:59] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 04:31:01,540 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:31:01] "GET /client-login HTTP/1.1" 200 -
+[ 2026-05-15 04:31:09,361 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:31:09] "POST /send-client-otp HTTP/1.1" 200 -
+[ 2026-05-15 04:31:17,307 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:31:17] "[32mPOST /verify-otp HTTP/1.1[0m" 302 -
+[ 2026-05-15 04:31:17,314 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:31:17] "GET /client-home HTTP/1.1" 200 -
+[ 2026-05-15 04:31:18,930 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:31:18] "POST /request-service HTTP/1.1" 200 -
+[ 2026-05-15 04:31:21,820 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:31:21] "GET /employee-home HTTP/1.1" 200 -
+[ 2026-05-15 04:31:24,057 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 04:31:24] "POST /accept-request/4 HTTP/1.1" 200 -
