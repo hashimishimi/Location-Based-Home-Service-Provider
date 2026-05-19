@@ -1,0 +1,30 @@
+[ 2026-05-15 11:05:21,356 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-05-15 11:05:21,361 ] 97 werkzeug - INFO -  * Debugger PIN: 319-268-885
+[ 2026-05-15 11:05:24,995 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:05:24] "GET / HTTP/1.1" 200 -
+[ 2026-05-15 11:05:30,851 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:05:30] "GET / HTTP/1.1" 200 -
+[ 2026-05-15 11:05:34,016 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:05:34] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 11:05:35,069 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:05:35] "GET /employee-login HTTP/1.1" 200 -
+[ 2026-05-15 11:05:44,094 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:05:44] "POST /send-employee-otp HTTP/1.1" 200 -
+[ 2026-05-15 11:05:54,996 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:05:54] "[32mPOST /verify-otp HTTP/1.1[0m" 302 -
+[ 2026-05-15 11:05:55,058 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:05:55] "GET /employee-home HTTP/1.1" 200 -
+[ 2026-05-15 11:06:02,338 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:02] "[32mPOST /close-request/2 HTTP/1.1[0m" 302 -
+[ 2026-05-15 11:06:02,380 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:02] "GET /employee-home HTTP/1.1" 200 -
+[ 2026-05-15 11:06:03,410 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:03] "[32mPOST /close-request/3 HTTP/1.1[0m" 302 -
+[ 2026-05-15 11:06:03,458 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:03] "GET /employee-home HTTP/1.1" 200 -
+[ 2026-05-15 11:06:05,135 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:05] "[32mPOST /close-request/4 HTTP/1.1[0m" 302 -
+[ 2026-05-15 11:06:05,177 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:05] "GET /employee-home HTTP/1.1" 200 -
+[ 2026-05-15 11:06:06,207 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:06] "[32mPOST /close-request/7 HTTP/1.1[0m" 302 -
+[ 2026-05-15 11:06:06,252 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:06] "GET /employee-home HTTP/1.1" 200 -
+[ 2026-05-15 11:06:10,924 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:10] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 11:06:15,184 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:15] "GET /client-login HTTP/1.1" 200 -
+[ 2026-05-15 11:06:30,628 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:30] "POST /send-client-otp HTTP/1.1" 200 -
+[ 2026-05-15 11:06:41,772 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:41] "[32mPOST /verify-otp HTTP/1.1[0m" 302 -
+[ 2026-05-15 11:06:41,786 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:41] "GET /client-home HTTP/1.1" 200 -
+[ 2026-05-15 11:06:45,884 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:45] "POST /request-service HTTP/1.1" 200 -
+[ 2026-05-15 11:06:48,453 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:48] "GET /employee-home HTTP/1.1" 200 -
+[ 2026-05-15 11:06:51,521 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:51] "POST /accept-request/8 HTTP/1.1" 200 -
+[ 2026-05-15 11:06:57,425 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:06:57] "POST /accept-request/8 HTTP/1.1" 200 -
+[ 2026-05-15 11:07:02,511 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 11:07:02] "POST /accept-request/8 HTTP/1.1" 200 -
+[ 2026-05-15 11:07:40,168 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\src\\utils\\service_utils.py', reloading
+[ 2026-05-15 11:07:40,169 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\src\\utils\\service_utils.py', reloading
+[ 2026-05-15 11:07:40,169 ] 97 werkzeug - INFO -  * Detected change in 'E:\\FILES\\Heckr\\Projects\\Location Based Home Service Provider\\src\\utils\\service_utils.py', reloading

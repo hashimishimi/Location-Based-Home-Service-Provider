@@ -2,34 +2,39 @@
 <html>
 <head>
   <title>Client Sign Up</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-  <h2>Client Details Form</h2>
+  <div class="container">
+    <div class="form-box">
+      <h2>Client Sign Up</h2>
 
-  <form action="/add-client" method="POST">
+      <form action="/add-client" method="POST">
 
-    <label for="name">Client Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+        <label>Client Name:</label>
+        <input type="text" name="name" required>
 
-    <label for="email">Client Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+        <label>Client Email:</label>
+        <input type="email" name="email" required>
 
-    <label for="phone_num">Client Phone Number:</label><br>
-    <input type="text" id="phone_num" name="phone_num" required><br><br>
+        <label>Client Phone Number:</label>
+        <input type="text" name="phone_num" required>
 
-    <input type="hidden" id="latitude" name="latitude">
-    <input type="hidden" id="longitude" name="longitude">
+        <input type="hidden" id="latitude" name="latitude">
+        <input type="hidden" id="longitude" name="longitude">
 
-    <button type="button" onclick="getLocation()">Use My Current Location</button>
-    <button type="submit" onclick="return validateLocation()">Submit Client</button>
+        <button type="button" onclick="getLocation()">Use My Current Location</button>
+        <button type="submit" onclick="return validateLocation()">Submit</button>
 
-  </form>
+      </form>
 
-  <hr>
-
-  <p><strong>Latitude:</strong> <span id="lat">-</span></p>
-  <p><strong>Longitude:</strong> <span id="lng">-</span></p>
+      <div class="location-info">
+        <p><strong>Latitude:</strong> <span id="lat">-</span></p>
+        <p><strong>Longitude:</strong> <span id="lng">-</span></p>
+      </div>
+    </div>
+  </div>
 
   <script>
     function getLocation() {
@@ -53,7 +58,7 @@
           }
         );
       } else {
-        alert("Geolocation is not supported by this browser.");
+        alert("Your browser does not support location.");
       }
     }
 

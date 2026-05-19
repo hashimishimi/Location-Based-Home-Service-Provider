@@ -2,45 +2,50 @@
 <html>
 <head>
   <title>Employee Sign Up</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-  <h2>Employee Details Form</h2>
+  <div class="container">
+    <div class="form-box">
+      <h2>Employee Sign Up</h2>
 
-  <form action="/add-employee" method="POST">
+      <form action="/add-employee" method="POST">
 
-    <label for="name">Employee Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+        <label>Employee Name:</label>
+        <input type="text" name="name" required>
 
-    <label for="email">Employee Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+        <label>Employee Email:</label>
+        <input type="email" name="email" required>
 
-    <label for="phone_num">Employee Phone Number:</label><br>
-    <input type="text" id="phone_num" name="phone_num" required><br><br>
+        <label>Employee Phone Number:</label>
+        <input type="text" name="phone_num" required>
 
-    <label for="service">Service Provided:</label><br>
-    <select id="service" name="service" required>
-      <option value="">Select service</option>
-      <option value="Plumber">Plumber</option>
-      <option value="Electrician">Electrician</option>
-      <option value="Carpenter">Carpenter</option>
-      <option value="Painter">Painter</option>
-      <option value="Cleaner">Cleaner</option>
-      <option value="Driver">Driver</option>
-    </select><br><br>
+        <label>Service Provided:</label>
+        <select name="service" required>
+          <option value="">Select service</option>
+          <option value="Plumber">Plumber</option>
+          <option value="Electrician">Electrician</option>
+          <option value="Carpenter">Carpenter</option>
+          <option value="Painter">Painter</option>
+          <option value="Cleaner">Cleaner</option>
+          <option value="Driver">Driver</option>
+        </select>
 
-    <input type="hidden" id="latitude" name="latitude">
-    <input type="hidden" id="longitude" name="longitude">
+        <input type="hidden" id="latitude" name="latitude">
+        <input type="hidden" id="longitude" name="longitude">
 
-    <button type="button" onclick="getLocation()">Use My Current Location</button>
-    <button type="submit" onclick="return validateLocation()">Submit Employee</button>
+        <button type="button" onclick="getLocation()">Use My Current Location</button>
+        <button type="submit" onclick="return validateLocation()">Submit</button>
 
-  </form>
+      </form>
 
-  <hr>
-
-  <p><strong>Latitude:</strong> <span id="lat">-</span></p>
-  <p><strong>Longitude:</strong> <span id="lng">-</span></p>
+      <div class="location-info">
+        <p><strong>Latitude:</strong> <span id="lat">-</span></p>
+        <p><strong>Longitude:</strong> <span id="lng">-</span></p>
+      </div>
+    </div>
+  </div>
 
   <script>
     function getLocation() {

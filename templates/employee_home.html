@@ -2,34 +2,74 @@
 <html>
 <head>
     <title>Employee Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
+<div class="container">
+
     <h1>Employee Dashboard</h1>
 
-    <h3>Pending Requests</h3>
+    <!-- AVAILABLE REQUESTS -->
+    <h2>Available Requests</h2>
 
-    {% for request in requests %}
+    {% if pending_requests %}
 
-        <div style="border:1px solid black; padding:10px; margin:10px;">
+        {% for request in pending_requests %}
 
-            <p>Request ID: {{ request[0] }}</p>
+            <div class="request-card">
 
-            <p>Service: {{ request[2] }}</p>
+                <p><strong>Request ID:</strong> {{ request[0] }}</p>
+                <p><strong>Service:</strong> {{ request[2] }}</p>
+                <p><strong>Status:</strong> {{ request[5] }}</p>
 
-            <p>Status: {{ request[5] }}</p>
+                <form action="/accept-request/{{ request[0] }}" method="POST">
+                    <button type="submit">Accept Request</button>
+                </form>
 
-            <form action="/accept-request/{{ request[0] }}" method="POST">
+            </div>
 
-                <button type="submit">
-                    Accept Request
-                </button>
+        {% endfor %}
 
-            </form>
+    {% else %}
+        <p>No nearby requests available.</p>
+    {% endif %}
 
-        </div>
+    <hr>
 
-    {% endfor %}
+    <!-- ACCEPTED JOBS -->
+    <h2>Active Jobs</h2>
+
+    {% if accepted_requests %}
+
+        {% for request in accepted_requests %}
+
+            <div class="request-card">
+
+                <p><strong>Request ID:</strong> {{ request[0] }}</p>
+                <p><strong>Service:</strong> {{ request[2] }}</p>
+                <p><strong>Status:</strong> {{ request[5] }}</p>
+
+                <form action="/complete-request/{{ request[0] }}" method="POST">
+                    <button type="submit">Complete Request</button>
+                </form>
+
+                <form action="/close-request/{{ request[0] }}" method="POST">
+                    <button class="secondary" type="submit">Close Request</button>
+                </form>
+
+            </div>
+
+        {% endfor %}
+
+    {% else %}
+        <p>No active jobs.</p>
+    {% endif %}
+
+    <br>
+    <button class="secondary" onclick="window.location.href='/'">Back to Home</button>
+
+</div>
 
 </body>
 </html>

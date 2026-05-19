@@ -1,0 +1,26 @@
+[ 2026-05-15 10:50:29,697 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-05-15 10:50:29,712 ] 97 werkzeug - INFO -  * Debugger PIN: 319-268-885
+[ 2026-05-15 10:50:34,587 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:50:34] "GET / HTTP/1.1" 200 -
+[ 2026-05-15 10:50:35,506 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:50:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2026-05-15 10:50:39,428 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:50:39] "GET / HTTP/1.1" 200 -
+[ 2026-05-15 10:50:41,818 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:50:41] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 10:50:42,434 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:50:42] "GET /client-login HTTP/1.1" 200 -
+[ 2026-05-15 10:50:49,589 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:50:49] "POST /send-client-otp HTTP/1.1" 200 -
+[ 2026-05-15 10:50:59,092 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:50:59] "[32mPOST /verify-otp HTTP/1.1[0m" 302 -
+[ 2026-05-15 10:50:59,154 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:50:59] "GET /client-home HTTP/1.1" 200 -
+[ 2026-05-15 10:51:01,380 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:51:01] "POST /request-service HTTP/1.1" 200 -
+[ 2026-05-15 10:51:05,492 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:51:05] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 10:51:06,180 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:51:06] "GET /employee-login HTTP/1.1" 200 -
+[ 2026-05-15 10:51:14,218 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:51:14] "POST /send-employee-otp HTTP/1.1" 200 -
+[ 2026-05-15 10:51:23,847 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:51:23] "[32mPOST /verify-otp HTTP/1.1[0m" 302 -
+[ 2026-05-15 10:51:23,891 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:51:23] "GET /employee-home HTTP/1.1" 200 -
+[ 2026-05-15 10:51:33,128 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:51:33] "GET / HTTP/1.1" 200 -
+[ 2026-05-15 10:51:35,147 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:51:35] "GET /login-options HTTP/1.1" 200 -
+[ 2026-05-15 10:51:36,080 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:51:36] "GET /client-login HTTP/1.1" 200 -
+[ 2026-05-15 10:52:16,079 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:52:16] "POST /send-client-otp HTTP/1.1" 200 -
+[ 2026-05-15 10:52:34,413 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:52:34] "[32mPOST /verify-otp HTTP/1.1[0m" 302 -
+[ 2026-05-15 10:52:34,422 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:52:34] "GET /client-home HTTP/1.1" 200 -
+[ 2026-05-15 10:52:37,163 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:52:37] "POST /request-service HTTP/1.1" 200 -
+[ 2026-05-15 10:52:39,476 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:52:39] "GET /employee-home HTTP/1.1" 200 -
+[ 2026-05-15 10:52:45,552 ] 97 werkzeug - INFO - 127.0.0.1 - - [15/May/2026 10:52:45] "POST /accept-request/7 HTTP/1.1" 200 -
+[ 2026-05-15 10:53:47,757 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\Hashim\\anaconda3\\cwp.py', reloading

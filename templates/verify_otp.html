@@ -2,18 +2,27 @@
 <html>
 <head>
   <title>Verify OTP</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-  <h2>OTP Verification</h2>
-  <p>Please enter the OTP sent to your registered phone number.</p>
+  <div class="container">
+    <div class="form-box">
+      <h2>OTP Verification</h2>
+      <p>Please enter the OTP sent to your phone</p>
 
-  <form action="/verify-otp" method="POST">
-    <label for="otp">Enter OTP:</label><br>
-    <input type="text" id="otp" name="otp" maxlength="6" required><br><br>
+      <form action="/verify-otp" method="POST">
 
-    <button type="submit">Verify OTP</button>
-  </form>
+        <label>Enter OTP:</label>
+        <input type="text" name="otp" maxlength="6" required>
+
+        <button type="submit">Verify OTP</button>
+
+      </form>
+
+      <button class="secondary" onclick="window.location.href='/'">Back to Home</button>
+    </div>
+  </div>
 
 </body>
 </html>

@@ -125,13 +125,20 @@ def accept_service_request(request_id, emp_ID):
     conn = get_db_connection()
     cur = conn.cursor()
 
-    # get request location
+    # get request + client details
     cur.execute("""
-        SELECT lat, lng, service_name
+        SELECT
+            sr.lat,
+            sr.lng,
+            sr.service_name,
+            c.phone_num
 
-        FROM service_requests
+        FROM service_requests sr
 
-        WHERE request_id = %s
+        JOIN clients c
+            ON sr.client_ID = c.client_ID
+
+        WHERE sr.request_id = %s
     """, (request_id,))
 
     request_data = cur.fetchone()
@@ -139,6 +146,7 @@ def accept_service_request(request_id, emp_ID):
     lat = request_data[0]
     lng = request_data[1]
     service_name = request_data[2]
+    client_phone = request_data[3]
 
     # update request
     cur.execute("""
@@ -162,9 +170,73 @@ def accept_service_request(request_id, emp_ID):
     print(f"Service: {service_name}")
     print()
     print("Client Location:")
-    print(f"Lat: {lat}")
-    print(f"Lng: {lng}")
-    print()
     print("Google Maps:")
     print(f"https://www.google.com/maps?q={lat},{lng}")
+    print()
+    print("Client Contact Number:")
+    print(f"Client Phone: {client_phone}")
     print("==================================\n")
+
+
+
+# -------------------- GET ACCEPTED REQUESTS --------------------
+def get_accepted_requests(emp_ID):
+
+    conn = get_db_connection()
+    cur = conn.cursor()
+
+    cur.execute("""
+        SELECT *
+
+        FROM service_requests
+
+        WHERE assigned_emp_ID = %s
+        AND status = 'Accepted'
+    """, (emp_ID,))
+
+    requests = cur.fetchall()
+
+    cur.close()
+    conn.close()
+
+    return requests
+
+
+# -------------------- CLOSE REQUEST --------------------
+def close_request(request_id):
+
+    conn = get_db_connection()
+    cur = conn.cursor()
+
+    cur.execute("""
+        UPDATE service_requests
+
+        SET status = 'Closed'
+
+        WHERE request_id = %s
+    """, (request_id,))
+
+    conn.commit()
+
+    cur.close()
+    conn.close()
+
+
+# -------------------- COMPLETE REQUEST --------------------
+def complete_request(request_id):
+
+    conn = get_db_connection()
+    cur = conn.cursor()
+
+    cur.execute("""
+        UPDATE service_requests
+
+        SET status = 'Completed'
+
+        WHERE request_id = %s
+    """, (request_id,))
+
+    conn.commit()
+
+    cur.close()
+    conn.close()

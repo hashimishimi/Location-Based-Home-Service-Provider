@@ -13,7 +13,11 @@ from src.utils.service_utils import (
     create_service_request,
     get_employee_service,
     get_pending_requests,
-    accept_service_request
+    accept_service_request,
+
+    get_accepted_requests,
+    complete_request,
+    close_request
 )
 
 import mysql.connector
@@ -106,7 +110,7 @@ def add_client():
             
         clientmodif.AddClient(name, email, full_num, lat, lng)
 
-        return "Client registered successfully!"
+        return redirect('/client-login')
 
 
 
@@ -140,7 +144,7 @@ def add_employee():
 
         employeemodif.AddEmp(name, email, full_num, service, lat, lng)
 
-        return "Employee registered successfully!"
+        return redirect('/employee-login')
 
 
 
@@ -380,15 +384,20 @@ def employee_home():
 
     employee_service = get_employee_service(emp_ID)
 
-    requests = get_pending_requests(
+    pending_requests = get_pending_requests(
         employee_service,
         emp_ID,
         radius_km=10
     )
 
+    accepted_requests = get_accepted_requests(emp_ID)
+
     return render_template(
         "employee_home.html",
-        requests=requests
+
+        pending_requests=pending_requests,
+
+        accepted_requests=accepted_requests
     )
 
 # -------------------- REQUEST SERVICE --------------------
@@ -424,7 +433,24 @@ def accept_request(request_id):
     )
 
     return "Request accepted successfully!"
-    
+
+
+# -------------------- COMPLETE REQUEST --------------------
+@app.route('/complete-request/<int:request_id>', methods=['POST'])
+def complete_service_request(request_id):
+
+    complete_request(request_id)
+
+    return redirect('/employee-home')
+
+# -------------------- CLOSE REQUEST --------------------
+@app.route('/close-request/<int:request_id>', methods=['POST'])
+def close_service_request(request_id):
+
+    close_request(request_id)
+
+    return redirect('/employee-home')
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1', port=5000)

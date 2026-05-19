@@ -2,17 +2,21 @@
 <html>
 <head>
   <title>Login Options</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-  <h2>Login Options</h2>
-  <h3>Choose account type</h3>
+  <div class="container">
+    <div class="form-box">
+      <h2>Login Options</h2>
+      <p>Choose account type</p>
 
-  <button onclick="window.location.href='/client-login'">Client Login</button>
-  <button onclick="window.location.href='/employee-login'">Employee Login</button>
+      <button onclick="window.location.href='/client-login'">Client Login</button>
+      <button onclick="window.location.href='/employee-login'">Employee Login</button>
 
-  <br><br>
-  <button onclick="window.location.href='/'">Back to Home</button>
+      <button class="secondary" onclick="window.location.href='/'">Back to Home</button>
+    </div>
+  </div>
 
 </body>
 </html>
